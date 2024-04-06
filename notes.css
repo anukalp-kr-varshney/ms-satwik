@@ -1,0 +1,435 @@
+*{ 
+    Margin:0;
+    Padding:0;
+    Box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    }
+    
+    button{
+        cursor: pointer;
+    }
+    
+    #sub-btn{
+        background-color: red;
+    }
+    
+    body{
+        background-color: rgb(236, 231, 231);
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 200px;
+        background: #4a98f7;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .nav,
+      .nav .nav-links {
+        display: flex;
+        align-items: center;
+      }
+      .nav {
+        justify-content: space-between;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .nav .logo {
+        font-size: 22px;
+        font-weight: 500;
+      }
+      .nav .nav-links {
+        column-gap: 20px;
+        list-style: none;
+      }
+      .nav .nav-links a {
+        transition: all 0.2s linear;
+      }
+      .nav.openSearch .nav-links a {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .nav .search-icon {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .nav .search-box {
+        position: absolute;
+        right: 250px;
+        height: 45px;
+        max-width: 555px;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s linear;
+      }
+      .nav.openSearch .search-box {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .search-box .search-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        left: 15px;
+        color: #4a98f7;
+        transform: translateY(-50%);
+      }
+      .search-box input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background-color: #fff;
+        padding: 0 15px 0 45px;
+      }
+      .nav .navOpenBtn,
+      .nav .navCloseBtn {
+        display: none;
+      }
+    
+      .top-section{
+        height: 645px;
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        background-image: url(https://ravigupta.me/portfolio/prjAssets/visualDevelopment/Wanderings/Wanderings08.jpg);
+        margin-bottom: 140px;
+      }
+    
+      .ts-name{
+        margin-top: 190px;
+        margin-left: 90px;
+      }
+      .ts-name h1{
+        font-size: 45px;
+        color: white;
+        font-weight: 600;
+      }
+      .ts-name button{
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        border: 0;
+        outline: 2px solid grey;
+        background-color: darkolivegreen;
+        color: white;
+      }
+    
+      .ts-image{
+        margin-top: 140px;
+        margin-left: 200px;
+      }
+    
+      .stats-logo, .stats-name, .stats-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .stats-logo img{
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+    
+      .stats-name h1{
+        font-size: 35px;
+        font-weight: 400;
+        color: #021f32;
+        margin-bottom: 20px;
+      }
+    
+      .stats-btn{
+        margin-left: -40px;
+      }
+    
+     button{
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #4a98f7;
+        color: white;
+        font-weight: 500;
+        transition: 1s all ease;
+        margin-left: 40px;
+        margin-bottom: 130px;
+      }
+    
+     button:hover{
+        transform: scale(1.2);
+      }
+    
+      .lb{
+        margin-bottom: 120px;
+        border-bottom: 3px solid #333;
+        margin-left: 40px;
+        color: rgb(236, 231, 231);
+        margin-right: 40px;
+      }
+    
+      .course-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .course-title h1{
+        font-size: 35px;
+        color: #021f32;
+        font-weight: 600;
+        margin-bottom: 90px;
+        border-bottom: 2px solid grey;
+      }
+    
+      .c-img, .c-title, .c-info, .c-attributes, .c-price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .c-img img{
+        width: 400px;
+        border: 4px solid grey;
+        border-radius: 10px;
+        margin-bottom: 40px;
+      }
+    
+      .c-title h1{
+        font-size: 35px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+    
+      .c-info h2{
+        font-size: 25px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+    
+      .c-attributes h1, .c-price h1{
+        font-size: 30px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+    
+      .c-price h1{
+        color: rgb(14, 97, 14);
+        margin-bottom: 100px;
+      }
+    
+      .c-attributes span, .c-price span{
+        color: rgb(236, 231, 231);
+      }
+    
+      .course-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -60px;
+      }
+    
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .perk-list li{
+        font-size: 25px;
+        margin-bottom: 10px;
+        list-style: none;
+      }
+    
+      #ll{
+        margin-bottom: 190px;
+      }
+    
+    
+      .content {
+        padding: 20px;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;    width: 100%;
+        bottom: 0;
+      }
+    
+    
+    #gdrive{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 170px;
+    }
+
+
+    #btn{
+        
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      /* responsive */
+      @media screen and (max-width: 1160px) {
+        .nav {
+          padding: 15px 100px;
+        }
+        .nav .search-box {
+          right: 150px;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        .nav {
+          padding: 15px 50px;
+        }
+        .nav .search-box {
+          right: 100px;
+          max-width: 400px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .nav .navOpenBtn,
+        .nav .navCloseBtn {
+          display: block;
+        }
+        .nav {
+          padding: 15px 20px;
+        }
+        .nav .nav-links {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          height: 100%;
+          max-width: 280px;
+          width: 100%;
+          padding-top: 100px;
+          row-gap: 30px;
+          flex-direction: column;
+          background-color: #11101d;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.4s ease;
+          z-index: 100;
+        }
+        .nav.openNav .nav-links {
+          left: 0;
+        }
+        .nav .navOpenBtn {
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .nav .navCloseBtn {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .nav .search-box {
+          top: calc(100% + 10px);
+          max-width: calc(100% - 20px);
+          right: 50%;
+          transform: translateX(50%);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+    
+    
+      @media screen and (max-width: 768px) {
+        .ts-image{
+          display: none;
+        }
+    
+        .course-nav{
+          font-size: 10px;
+        }
+      }
+    
+    
+      @media screen and (max-width: 425px) {
+        .c-info h2{
+          font-size: 17px;
+        }
+      }
+    
+    
+      @media screen and (max-width: 375px) {
+        .stats-name h1{
+          font-size: 30px;
+        }
+        .c-img img{
+          width: 290px;
+        }
+        .perk-list li{
+          font-size: 20px;
+        }
+      }
+    
+    
+    
+      @media screen and (max-width: 320px) {
+        .ts-name h1{
+          font-size: 30px;
+        }
+        .stats-name h1{
+          font-size: 20px;
+        }
+        .c-img img{
+          width: 290px;
+        }
+        .perk-list li{
+          font-size: 20px;
+        }
+      }
+    
+    
+    
+    
+    
+    
+    
+    
